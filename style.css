@@ -1,0 +1,155 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.score, .health
+{
+	color: rgb(0, 0, 0);
+	display: flex;
+	gap: 20px;
+}
+.health
+{
+	background-color: rgba(201, 98, 98, 0.636);
+	width: 150px;
+}
+.shit
+{
+	width: 100%;
+	background-color: green;
+}
+body{
+	overflow: hidden;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 23px;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.screen
+{
+	margin-left: 50%;
+	width: 60%;
+	position: relative;
+	margin-top: 10%;
+	z-index: 100;
+	transform: translateY(-20%);
+	transform: translateX(-50%);
+	background-color: rgba(128, 128, 128, 0.261);
+}
+.status
+{
+	padding: 11px;
+	display: flex;
+	justify-content: space-around;
+}
+.game
+{
+	padding: 11px;
+	align-items: center;
+	display: flex;
+	padding-top: 30px ;
+	padding-left: 100px;
+	padding-right: 100px ;
+	justify-content: space-between;
+	background-color: whitesmoke;
+}
+.choice
+{
+	gap: 51px;
+	display: flex;
+	max-width: 170px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.ss img
+{
+	width: 100%;
+	z-index: 100;
+}
+.choice .ss
+{
+	border: 1px solid black;
+	width: 50px;
+	align-content: center;
+	height: 50px;
+	text-align: center;
+	border-radius: 100px;
+	transition: .3s;
+}
+.trans
+{
+	box-shadow: 11px 2px 40px red;
+	cursor: pointer;
+	background-color: whitesmoke;
+}
+.computer
+{
+	border: 1px solid black;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	align-content: center;
+	border-radius: 100px;
+}
+.computer img
+{
+	width: 90%;
+	z-index: 100;
+}
+.result
+{
+	margin-top: 70px;
+	align-content: center;
+	transform: translateX(-50%);
+	margin-left: 50%;
+	position: relative;
+	width: 60%;
+	height: 220px;
+	background-color: rgba(99, 71, 71, 0.073);
+	text-align: center;
+	transition: .3s;
+}
+/* random staff */
+
+.back{
+	overflow: hidden;
+	position: absolute;
+	background-color: rgb(44, 34, 34);
+	width: 100%;
+	height: 100%;
+}
+.boble{
+	display: flex;
+	justify-content: center;
+}
+.boble span
+{
+	width: 30px;
+	height: 30px;
+	background-color: red;
+	border-radius: 50%;
+	box-shadow: 0px 0px 11px  7px whitesmoke;
+	animation: animate 15s linear infinite;
+	animation-duration: calc(200s / var(--i));
+}
+.boble span:nth-child(even)
+{
+	width: 30px;
+	height: 30px;
+	background-color: rgb(38, 175, 122);
+	border-radius: 50%;
+	box-shadow: 0px 0px 11px  7px whitesmoke;
+}
+@keyframes animate
+{
+	0%{
+		transform: translateY(100vh) scale(0);
+	}
+	100%
+	{
+		transform: translateY(-10vh) scale(1);
+	}
+	
+}
